@@ -1,0 +1,126 @@
+# Custom aliases
+
+# LIST aliases -----------------------------------------------------------------------------------
+alias ll='LC_COLLATE=C ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias list='ls -l'
+alias dir='ls -lahF | grep "^d" && ls -lahF | grep "^-" && ls -lahF | grep "^l"'
+
+alias cd..="cd .."
+alias cd...="cd ../.."
+alias cd....="cd ../../.."
+alias cd.....="cd ../../../.."
+alias cd......="cd ../../../../.."
+
+alias cd1="cd .."
+alias cd2="cd ../.."
+alias cd3="cd ../../.."
+alias cd4="cd ../../../.."
+alias cd5="cd ../../../../.."
+
+# CLEAR aliases ---------------------------------------------------------------------------------
+alias c='clear'
+alias cls='clear'
+
+# PATHS shortcuts ------------------------------------------------------------------------------
+alias appshome='cd ~/.local/share/applications'
+alias appsusr='cd /usr/share/applications'
+alias conkys='cd ~/.conky'
+alias fonts='cd ~/.fonts'
+alias gtk3='cd ~/.config/gtk-3.0'
+alias icons='cd ~/.icons'
+alias planks='cd ~/.config/plank/dock1/launchers'
+alias scripts='cd ~/.scripts'
+alias themes='cd ~/.themes'
+
+# PKG aliases -----------------------------------------------------------------------------------
+alias pkg='sudo dpkg --get-selections'
+alias pkgi='sudo dpkg -i'
+
+# APT-GET aliases -------------------------------------------------------------------------------
+alias add='sudo apt-get install'
+alias autoremove='sudo apt-get autoremove'
+alias clean='sudo apt-get clean'
+alias cleandeb='sudo apt-get autoclean'
+alias cleanall='sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get purge && sudo apt-get clean'
+alias fixsetup='sudo apt-get install -f'
+alias reinstall='sudo apt-get --reinstall install'
+alias remove='sudo apt-get --purge remove'
+alias removerepo='sudo add-apt-repository --remove' 
+alias resolve='sudo apt-get check ; sudo apt-get -f install'
+alias search='sudo apt-cache search'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get update && sudo apt-get upgrade'
+alias ver='sudo apt-cache show'
+
+# SYSTEM aliases -------------------------------------------------------------------------------
+alias off='sudo shutdown -p now'
+alias spaceroot='sudo du -sxm  /[^p]* | sort -nr   | head -n 15'
+alias spacehome='cd ~ && sudo du -sm * .[^.]* | sort -nr   | head -n 15'
+alias services='sudo sysv-rc-conf'
+alias sync='ntpdate -v -b 0.it.pool.ntp.org'
+alias suser='sudo -s'
+alias rootuser='sudo -i'
+alias xampp='sudo /opt/lampp/manager-linux-x64.run'
+
+# XFCE4 aliases --------------------------------------------------------------------------------
+alias restartpanels='xfce4-panel --restart'
+
+# BACKUP aliases -------------------------------------------------------------------------------
+# alias backup_mbr='sudo dd if=/dev/sdX of=/backup/path bs=512 count=1'
+# alias restore_mbr='sudo dd if=/restore/path of=/dev/sdX bs=446 count=1'
+
+# TEST aliases ---------------------------------------------------------------------------------
+alias test1='sysbench --test=cpu --cpu-max-prime=20000 run'
+alias prepare-test2='sysbench --test=fileio --file-total-size=150G prepare'
+alias test2='sysbench --test = FileIO --file-totale-size = 150G --file-test-mode = rndrw --init-RNG = on --max-time = 300 --max-richieste = 0 run'
+alias prepare-test3='sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=test --mysql-user=root --mysql-password=root prepare'
+alias test3='sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=test --mysql-user=root --mysql-password=root --max-time=60 --oltp-read-only=on --max-requests=0 --num-threads=8 run'
+
+# MOUNT and UMOUNT aliases ---------------------------------------------------------------------
+# alias vmware-mount='sudo mount -t ntfs-3g /dev/sdXn /mount/path/'
+# alias vmware-umount='sudo umount /mount/path'
+
+# alias linshare-mount='sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Linux_Share /media/giagio/Linux_Share'
+# alias winshare-mount='sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Windows_Share /media/giagio/Windows_Share'
+# alias linshare-umount='sudo umount /media/giagio/Linux_Share'
+# alias winshare-umount='sudo umount /media/giagio/Windows_Share'
+
+# OPEN VM TOOLS shared folders aliases ---------------------------------------------------------
+alias shared-folders='sudo mount -t fuse.vmhgfs-fuse .host:/ /media/giagio/Shared-Folders/ -o allow_other'
+
+# Mount commands for remote samba shared folders on Raspian Server
+#
+# phpEasyBudget2 FOLDER
+#
+alias peb-mount='sudo mount -t cifs -o username=giagio //xxx.xxx.xxx.xxx/phpEasyBudget2 /media/giagio/phpEasyBudget2'
+alias peb-umount='sudo umount /media/giagio/phpEasyBudget2'
+
+# DVDBACKUP aliases ---------------------------------------------------------------------
+# alias extractdvd='dvdbackup -i /dev/srX -M -p -o ~/Videos/'
+
+# FONT MANAGE aliases -------------------------------------------------------------------
+alias fcache='sudo fc-cache -f -v'
+
+# MISC aliases --------------------------------------------------------------------------
+alias home='cd ~'
+alias editbashrc='cd ~ ; nano .bashrc'
+alias raspian='ssh raspian -p xxxxx'
+alias raspian2='ssh raspian2 -p xxxxx'
+alias h='history'
+alias source='source ~/.bashrc'
+
+# MULTIMEDIA aliases --------------------------------------------------------------------
+alias youtube-dl-mp3='youtube-dl -x --audio-format mp3 --audio-quality 0'
+
+# CONKY aliases -------------------------------------------------------------------------
+
+alias conkym='conky -c ~/.conky/Conky-Mint/conkyrc.lua &'
+alias conkys='conky -c ~/.conky/Conky-Cool-Seamod/conkyrc.lua &'
+
+# For this alias add at the end color theme: Blue, Dark, Green, Grey, Orange, Pred, Red
+alias conkyn='sh -c "~/.conky/Conky-Numix/start-numix.sh Red"'
+
+# For this alias add at the end color theme: blue, Green, grey, orange, purple, red, yellow
+alias conkyf='sh -c "~/.conky/Conky-Futurama/conky/start-futurama.sh green"'

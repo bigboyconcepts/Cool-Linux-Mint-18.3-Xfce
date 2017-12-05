@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Pictures on server.local
+Comment=Pictures folder on Server Local
+Exec=thunar smb://server.local/shared/pictures/
+Icon=folder-pictures
+Path=
+Terminal=false
+StartupNotify=false
+Name[en_US.UTF-8]=Pictures on server.local
+Name[en_US]=Pictures on server.local

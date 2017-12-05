@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Videos on server.local
+Comment=Videos folder on Server Local
+Exec=thunar smb://server.local/shared/videos/
+Icon=folder-videos
+Path=
+Terminal=false
+StartupNotify=false
+Name[en_US.UTF-8]=Videos on server.local
+Name[en_US]=Videos on server.local

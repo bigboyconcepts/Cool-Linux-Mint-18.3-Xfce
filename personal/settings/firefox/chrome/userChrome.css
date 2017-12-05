@@ -1,0 +1,34 @@
+/*Hide Bookmark Folder Icon*/
+/*#personal-bookmarks toolbarbutton[type=menu] image {
+display: none !important;
+-moz-margin-end: 0px !important;
+}*/
+#personal-bookmarks toolbarbutton[container="true"] .toolbarbutton-menu-dropmarker {
+display: none !important;
+}
+
+#personal-bookmarks toolbarbutton {
+color: #C7C7C7 !important;
+}
+
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']) {
+-moz-appearance: none !important;
+background-color: white;
+color: black;
+}
+
+#downloads-indicator-counter {
+color: white;
+}
+
+textarea {
+-moz-appearance: none !important;
+background-color: white;
+color: black;
+}
+
+select {
+-moz-appearance: none !important;
+background-color: white;
+color: black;
+}

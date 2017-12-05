@@ -1,0 +1,35 @@
+computer:///
+file:///home/giagio/Documents
+file:///home/giagio/Downloads
+file:///home/giagio/Music
+file:///home/giagio/ownCloud
+file:///home/giagio/Pictures
+file:///home/giagio/ownCloud/Scripts
+file:///home/giagio/Videos
+file:///home/giagio/DATA
+file:///home/giagio/.config/conky Config - conky
+file:///home/giagio/.fonts Home - .fonts
+file:///home/giagio/.icons Home - .icons
+file:///home/giagio/.config Home - .config
+file:///home/giagio/.conky Home - .conky
+file:///home/giagio/.local Home - .local
+file:///home/giagio/.scripts Home - .scripts
+file:///home/giagio/.themes Home - .themes
+file:///usr/share/applications applications
+file:///usr/share/icons icons
+file:///opt opt
+file:///tmp tmp
+file:///usr/share/themes themes
+smb://server.local/ Raspberry Samba Shares
+smb://server.local/shared/rasphub Raspberry - RASPHUB
+smb://server.local/phpeasybudget2/ Raspberry - phpEasyBudget2
+smb://server.local/anonymous/ Raspberry - anonymous
+smb://server.local/shared/documents Raspberry - Documents
+smb://server.local/shared/downloads Raspberry - Downloads
+smb://server.local/shared/goodies Raspberry - Goodies
+smb://server.local/shared/goodies/linux-stuff Raspberry - Linux Stuff
+smb://server.local/shared/music Raspberry - Music
+smb://server.local/shared/pictures Raspberry - Pictures
+smb://server.local/shared/ Raspberry - Shared
+smb://server.local/shared/videos Raspberry - Videos
+smb://server.local/shared/webdev Raspberry - Web Dev

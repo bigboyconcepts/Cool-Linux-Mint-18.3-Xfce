@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Documents on server.local
+Comment=Documents folder on Server Local
+Exec=thunar smb://server.local/shared/documents/
+Icon=folder-documents
+Path=
+Terminal=false
+StartupNotify=false
+Name[en_US]=Documents on server.local

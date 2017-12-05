@@ -1,0 +1,365 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>system-run</icon>
+	<name>Run command ...</name>
+	<unique-id>1493673457164953-1</unique-id>
+	<command>xfce4-appfinder --collapsed</command>
+	<description>Launch a program</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>Terminal</icon>
+	<name>Open in Terminal</name>
+	<unique-id>1491332873629482-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Open terminal in the selected folder</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>folder-orange</icon>
+	<name>Open as Root</name>
+	<unique-id>1493555483203230-1</unique-id>
+	<command>gksu thunar %f</command>
+	<description>Open the folder with administration privileges</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>user-available</icon>
+	<name>Ownership to Root</name>
+	<unique-id>1493673666191169-2</unique-id>
+	<command>gksu &quot;chown -R root:root %F&quot;</command>
+	<description>Change to administrative permissions</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>user-busy</icon>
+	<name>Ownership to user</name>
+	<unique-id>1493673693019193-3</unique-id>
+	<command>gksu &quot;chown -R $USER:$USER %F&quot;</command>
+	<description>Removes use restrictions</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>moeditor</icon>
+	<name>Edit as Root</name>
+	<unique-id>1493673757197584-4</unique-id>
+	<command>gksu xed %f</command>
+	<description>Make administrative changes to text files</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>emblem-symbolic-link</icon>
+	<name>Create a Link</name>
+	<unique-id>1491332873630227-3</unique-id>
+	<command>ln -s %f  &apos;Link to %n&apos;</command>
+	<description>Create a symbolic link for each selected item</description>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+</action>
+<action>
+	<icon>folder-publicshare</icon>
+	<name>Share a folder on your network</name>
+	<unique-id>1399025775400525-1</unique-id>
+	<command>gksu system-config-samba %d</command>
+	<description>Configure file sharing</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>gnome-run</icon>
+	<name>Check SHA256</name>
+	<unique-id>1491332873630282-4</unique-id>
+	<command>mint-sha256sum %f</command>
+	<description>Computes SHA256 checksum for the selected file.</description>
+	<patterns>*.iso;*.ISO</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>media-optical</icon>
+	<name>Mount/Unmount ISO</name>
+	<unique-id>1491332873630325-5</unique-id>
+	<command>mountiso %f %n</command>
+	<description>Mount or Unmount ISO file.</description>
+	<patterns>*.iso;*.ISO</patterns>
+	<directories/>
+	<other-files/>
+</action>
+<action>
+	<icon>gtk-find</icon>
+	<name>Search...</name>
+	<unique-id>1491332873630768-6</unique-id>
+	<command>catfish %f</command>
+	<description>Search for Files</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>folder-saved-search-symbolic</icon>
+	<name>Search files inside...</name>
+	<unique-id>1474794602113979-1</unique-id>
+	<command>catfish --path=%f%d</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>archive-extract</icon>
+	<name>Extract here (bzip2)</name>
+	<unique-id>1410514017310947-4</unique-id>
+	<command>tar xjf %n</command>
+	<description></description>
+	<patterns>*.tar.bz2;*.tbz2</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>archive-extract</icon>
+	<name> Extract here (zip)</name>
+	<unique-id>1410514081092230-5</unique-id>
+	<command>unzip %f</command>
+	<description></description>
+	<patterns>*.zip</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>archive-insert-directory</icon>
+	<name>Create tar.gz from folder</name>
+	<unique-id>1410514138632569-6</unique-id>
+	<command>tar czvf %n.tar.gz %n</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>edit-copy</icon>
+	<name>Copy Pathname to Clipboard</name>
+	<unique-id>1474794849608483-2</unique-id>
+	<command>echo -n %f | xclip -i</command>
+	<description>Copies file&apos;s full pathname to the X PRIMARY selection</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>preferences-desktop-wallpaper</icon>
+	<name>Set as desktop background</name>
+	<unique-id>1410515334578771-17</unique-id>
+	<command>xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>baobab</icon>
+	<name>Disk Usage</name>
+	<unique-id>1410515408766219-18</unique-id>
+	<command>baobab %d</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>baobab</icon>
+	<name>Space Taken...</name>
+	<unique-id>1410515981791140-19</unique-id>
+	<command>xfce4-terminal -x ncdu %f </command>
+	<description>Calculate folder disk space</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>system-file-manager-symbolic</icon>
+	<name>Bulk rename</name>
+	<unique-id>1410516109070186-20</unique-id>
+	<command>thunar -B %F </command>
+	<description></description>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>k3b</icon>
+	<name>Burn image...</name>
+	<unique-id>1493555699069187-2</unique-id>
+	<command>xfburn --burn-image %f</command>
+	<description></description>
+	<patterns>*.iso</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>fonts</icon>
+	<name>Install .ttf Font</name>
+	<unique-id>1491332873630854-7</unique-id>
+	<command>fontinstaller %f %n</command>
+	<description>Installs .ttf Fonts for the user or system</description>
+	<patterns>*.ttf;*.TTF</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>application-image-jpg</icon>
+	<name>Convert to jpg</name>
+	<unique-id>1493565284976436-24</unique-id>
+	<command>~/.scripts/thunar-convert-to-jpg -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>application-image-png</icon>
+	<name>Convert to png</name>
+	<unique-id>1493565098351777-23</unique-id>
+	<command>~/.scripts/thunar-convert-to-png -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>view-media-lyrics</icon>
+	<name>Media info</name>
+	<unique-id>1493564958102456-20</unique-id>
+	<command>~/.scripts/thunar-media-info -f %f -t %n</command>
+	<description></description>
+	<patterns>*</patterns>
+	<audio-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>multimedia-video-player</icon>
+	<name>Video to Gif</name>
+	<unique-id>1493565032550322-21</unique-id>
+	<command>~/.scripts/thunar-video-to-gif -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon>changes-prevent</icon>
+	<name>OpenSSL Encrypt/Decrypt</name>
+	<unique-id>1493563417739077-12</unique-id>
+	<command>~/.scripts/thunar-openssl-encrypt-decrypt -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>changes-prevent</icon>
+	<name>GPG Encrypt</name>
+	<unique-id>1493563690543006-13</unique-id>
+	<command>~/.scripts/thunar-gpg-encrypt -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>changes-allow</icon>
+	<name>GPG Decrypt</name>
+	<unique-id>1493563715683356-14</unique-id>
+	<command>urxvtcd -e ~/.scripts/thunar-gpg-decrypt -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>mintupdate-installing</icon>
+	<name>GPG Sign</name>
+	<unique-id>1493563899155829-17</unique-id>
+	<command>~/.scripts/thunar-gpg-sign -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>dialog-information</icon>
+	<name>GPG Info</name>
+	<unique-id>1493563794558280-16</unique-id>
+	<command>~/.scripts/thunar-gpg-info -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>mintupdate-updates-available</icon>
+	<name>GPG Verify Signature</name>
+	<unique-id>1493563975246055-18</unique-id>
+	<command>~/.scripts/thunar-gpg-verify-signature -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>imgur</icon>
+	<name>Upload to imgur</name>
+	<unique-id>1493564855657543-19</unique-id>
+	<command>~/.scripts/thunar-upload-to-imgur -f %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>preferences-desktop-sound</icon>
+	<name>Make Startup Sound</name>
+	<unique-id>1493673846872986-6</unique-id>
+	<command>echo %f &gt;~/.config/startupsound.conf</command>
+	<description>Make selected Startup Sound</description>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon>preferences-desktop-sound</icon>
+	<name>Make Logout Sound</name>
+	<unique-id>1493673869183429-7</unique-id>
+	<command>echo %f &gt;~/.config/logoutsound.conf</command>
+	<description>Make selected Logout Sound</description>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+</actions>
