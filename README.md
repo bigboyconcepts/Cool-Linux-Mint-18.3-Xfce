@@ -1,6 +1,6 @@
-# Cool Linux Mint 18.1 XFCE
+# Cool Linux Mint 18.3 XFCE
 
-Cool Linux Mint 18.1 XFCE is a post-install useful scripts collection for Linux Mint 18.1 taken from Erik Dubois project (https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Xfce), reorganized and expanded according to my needs, and which simplify the installation process of various applications and also restoration of various software configurations after a clean install of Linux Mint 18.1 Serena.
+Cool Linux Mint 18.3 XFCE is a post-install useful scripts collection for Linux Mint 18.1 taken from Erik Dubois project (https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Xfce), reorganized and expanded according to my needs, and which simplify the installation process of various applications and also restoration of various software configurations after a clean install of Linux Mint 18.1 Serena.
 
 # How to install
 
@@ -29,19 +29,10 @@ do not forget to type "./" in front of name script.
 
 It's possible to run each single script separately, choosing selectively what you want to install:
 
-1. Script <b>1-install-core-software.sh</b> installs packets:
-ubuntu-restricted-addons, ubuntu-restricted-extras, openjdk-8-jre, icedtea-plugin, arj, cabextract, rar, mpack, p7zip, p7zip-full, sharutils, unace, unrar-free, unzip, uudeview, zip, bleachbit, catfish, dstat, glances, gparted, gnome-system-monitor, grsync, hardinfo, htop, hwinfo, htop, hwinfo, iotop, ipcalc, joe, focuswriter, meld, multitail, partclone, partimage, plank, screenruler, shutter, slurm, stress, stress-ng, suckless-tools, scrot, screenfetch, sysv-rc-conf, vnstat, xclip, xfonts-terminus, curl, exfat-fuse, exfat-utils, extlinux, dconf-cli, dconf-editor, fuse, fusesmb, ppa-purge, memtest86+, ncdu, nmap, ntpdate, pv.
--------------------------------------------
-2. Script <b>2-install-misc-software.sh</b> installs packets:
-aria2, bluefish, bluefish-data, bluefish-plugins, calibre calibre-bin, cifs-utils, clipit, cups-pdf, deja-dup, deja-dup-backend-cloudfiles, deja-dup-backend-gvfs, deja-dup-backend-s3, deluge, docky, doublecmd-gtk, doublecmd-plugins, evince, filezilla, filezilla-common, file-roller, font-manager, geany, geany-plugins, geany-plugins-common, gedit, gedit-plugins, gftp, gtk-recordmydesktop, gtk-theme-config, gnome-calendar, gnome-search-tool, geoclue-2.0, guvcview, iptraf, indicator-messages, keepass2, kupfer, key-mon, leafpad, liferea, liferea-data, libreoffice-style-sifr, linux-tools-4.4.0-21-generic, mc, mc-data, mousepad, msmtp, msmtp-mta, ca-certificates, ntfs-3g, ntfs-config, orage, pcmanfm, playonlinux, powertop, putty, putty-tools, psensor, qalculate, qbittorrent, qt4-qtconfig, redshift, redshift-gtk, samba, samba-common, samba-common-bin, samba-dsdb-modules, samba-libs, samba-vfs-modules, gadmin-samba, smbclient, sysbench, terminator, uget, wine, xchat-gnome, xchat-gnome-common, zenity, zenity-common.
--------------------------------------------
-3. Script <b>3-install-graphic-software.sh</b> installs packets:
-gcolor2, gimp-plugin-registry, gimp-data-extras, gpick, inkscape, krita, krita-data, mypaint, mypaint-data, mypaint-data-extras, pinta, rapid-photo-downloader, scribus, scribus-template, ttf-freefont, ttf-bitstream-vera, ttf-dejavu, ttf-liberation, ttf-mscorefonts-installer.
--------------------------------------------
-4. Script <b>4-install-multimedia-software.sh</b> installs packets:
-acetoneiso, amarok, amarok-common, amarok-utils, asunder, audacious, audacious-plugins, audacious-plugins-data, audacity, audacity-data, brasero, brasero-cdrkit, clementine, cdparanoia, cdrdao, devede, dvd+rw-tools, dvdbackup, dvdisaster, dvdisaster-doc, easytag, growisofs, gmusicbrowser, gnome-mplayer, handbrake, k3b, k3b-data, k3b-extrathemes, lame, openshot, 
-openshot-doc, frei0r-plugins, parole, radiotray, rhythmbox, rhythmbox-plugins, rhythmbox-plugin-cdrecorder, shotwell, shotwell-common, soundconverter, totem, totem-plugins, twolame, vlc, vlc-plugin*, winff, youtube-dl. 
--------------------------------------------
+1. Script <b>1-install-core-software.sh</b>
+2. Script <b>2-install-misc-software.sh</b>
+3. Script <b>3-install-graphic-software.sh</b>
+4. Script <b>4-install-multimedia-software.sh</b>
 5. Script <b>5-install-extra-software.sh</b> runs several scripts located in <b>extra-software</b> folder that setup the following programs:
 
  - atom
@@ -81,7 +72,7 @@ openshot-doc, frei0r-plugins, parole, radiotray, rhythmbox, rhythmbox-plugins, r
  - Tox IM
  - Pencil
  - XAMPP (a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl)
- - LibreOffice 5.3.x
+ - LibreOffice 5.4.x
  - Nautilus File Manager
  - hardcodefixer (Hardcoded Icon Fixer)
 
@@ -192,4 +183,3 @@ For now if this happens, you should apply this code in the terminal and add the 
 Then you can execute it by typing
 
 	./typeyourfilename
-
