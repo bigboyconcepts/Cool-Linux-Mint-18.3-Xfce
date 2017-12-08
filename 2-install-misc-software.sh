@@ -10,7 +10,7 @@ set -e
 # Modified by       : TheGreatYellow67 (TgY67)
 # Version           : v1
 # Start date        : 05/12/2017
-# Last modified date: 05/12/2017
+# Last modified date: 08/12/2017
 #
 # #################################################################
 
@@ -24,6 +24,7 @@ set -e
 
 sudo apt-get -y install aria2				# High speed download utility
 sudo apt-get -y install bluefish			# Advanced Gtk+ text editor for web and software development
+sudo apt-get -y install bum				# Graphical runlevel editor
 sudo apt-get -y install calibre calibre-bin		# E-book converter and library management
 sudo apt-get -y install clipit				# lightweight GTK+ clipboard manager
 sudo apt-get -y install cups-pdf			# PDF writer backend for CUPS (dummy transitional package)
@@ -42,6 +43,7 @@ sudo apt-get -y install gnome-search-tool		# GNOME tool to search files
 sudo apt-get -y install guvcview			# GTK+ base UVC Viewer
 sudo apt-get -y install iptraf				# Interactive Colorful IP LAN Monitor
 sudo apt-get -y install indicator-messages		# Indicator that collects messages that need a response
+sudo apt-get -y install jq				# Lightweight and flexible command-line JSON processor
 sudo apt-get -y install keepass2			# Password manager
 sudo apt-get -y install kupfer				# Fast and lightweight desktop summoner/launcher
 sudo apt-get -y install key-mon				# Utility to show live keyboard and mouse status
@@ -56,11 +58,13 @@ sudo apt-get -y install orage				# Calendar for Xfce Desktop Environment
 sudo apt-get -y install pcmanfm                         # Extremely fast and lightweight file manager
 sudo apt-get -y install playonlinux			# Front-end for Wine
 sudo apt-get -y install powertop			# Diagnose issues with power consumption and management
+sudo apt-get -y install preload				# Adaptive readahead daemon
 sudo apt-get -y install putty				# Telnet/SSH client for X
 sudo apt-get -y install psensor				# Display graphs for monitoring hardware temperature
 sudo apt-get -y install qalculate			# Calculator
 sudo apt-get -y install qbittorrent			# Bittorrent client based on libtorrent-rasterbar with a Qt4 GUI
 sudo apt-get -y install qt4-qtconfig			# QT4 Tool
+sudo apt-get -y install ruby-notify			# Desktop notification command on cross platform
 sudo apt-get -y install samba				# SMB/CIFS file, print, and login server for Unix
 sudo apt-get -y install samba-dsdb-modules		# Samba Directory Services Database
 sudo apt-get -y install samba-vfs-modules		# Samba Virtual FileSystem plugins

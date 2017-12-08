@@ -8,7 +8,7 @@
 #
 # Version           : v1
 # Start date        : 05/05/2017
-# Last modified date: 09/06/2017
+# Last modified date: 06/12/2017
 #
 # #################################################################
 
@@ -25,7 +25,7 @@ echo "#########     Remote location applications      ################"
 echo "################################################################"
 echo ""
 
-echo -e '\033[1;31m => Copying remote location applications (raspian shares)...'
+echo -e '\033[1;31m => Copying remote location applications (server.local shares)...'
 echo -e '\033[0m'
 sleep 2
 

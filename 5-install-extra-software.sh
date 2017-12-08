@@ -291,10 +291,10 @@ fi
 
 # #################################################################
 
-# Teamviewer 12
+# Teamviewer
 
 echo -e '\033[0m'
-echo -e '\033[1;31m => Teamviewer 12'
+echo -e '\033[1;31m => Teamviewer'
 echo -e '\033[0m'
 
 if ask "Do you want to install Teamviewer 12 ?"; then

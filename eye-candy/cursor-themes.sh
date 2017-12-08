@@ -9,7 +9,7 @@
 # Modified by       : TheGreatYellow (TgY)
 # Version           : v1
 # Start date        : 09/02/2017
-# Last modified date: 13/06/2017
+# Last modified date: 07/12/2017
 #
 # #################################################################
 
@@ -61,15 +61,11 @@ echo -e '\033[1;31m => Installing Capitaine cursors...'
 echo -e '\033[0m'
 sleep 2
 
-CAPITAINE_CURSORS_FILE="https://dl.opendesktop.org/api/files/download/id/1489948557/capitaine-cursors-r2.tar.gz"
+git clone https://github.com/keeferrourke/capitaine-cursors.git /tmp/capitaine-cursors/
+cp -r /tmp/capitaine-cursors/dist/ $HOME/.icons/capitaine-cursors/
 
-wget $CAPITAINE_CURSORS_FILE -O /tmp/capitaine-cursors.tar.gz
-cd /tmp
-tar xzf capitaine-cursors.tar.gz
-cp -r /tmp/capitaine-cursors-r2/bin/xcursors $HOME/.icons/capitaine-cursors/
-
-rm /tmp/capitaine-cursors.tar.gz
-rm -fr /tmp/capitaine-cursors-r2/
+rm -fr /tmp/capitaine-cursors/
+echo -e '\033[0m'
 
 # #################################################################
 # OSX El Capitan Cursors
@@ -80,7 +76,7 @@ echo -e '\033[1;31m => Installing OSX El Capitan cursors...'
 echo -e '\033[0m'
 sleep 2
 
-OSX_ELCAPITAN_CURSORS_FILE="https://dl.opendesktop.org/api/files/download/id/1461053384/175749-OSX-ElCap.tar.bz2"
+OSX_ELCAPITAN_CURSORS_FILE="https://dl.opendesktop.org/api/files/downloadfile/id/1461053384/s/d7a21f73fd7a73fe8df22a62c68ed8cf/t/1512648007/175749-OSX-ElCap.tar.bz2"
 
 wget $OSX_ELCAPITAN_CURSORS_FILE -O /tmp/osx-elcapitan-cursors.tar.bz2
 cd /tmp
@@ -100,7 +96,7 @@ echo -e '\033[1;31m => Installing OSX El Capitan RED cursors...'
 echo -e '\033[0m'
 sleep 2
 
-OSX_ELCAPITAN_RED_CURSORS_FILE="https://dl.opendesktop.org/api/files/download/id/1487018832/OSX-ElCap-RED.tar.gz"
+OSX_ELCAPITAN_RED_CURSORS_FILE="https://dl.opendesktop.org/api/files/downloadfile/id/1487018832/s/0a3d0f13b6a6db81995645d3f0e7344d/t/1512648218/OSX-ElCap-RED.tar.gz"
 
 wget $OSX_ELCAPITAN_RED_CURSORS_FILE -O /tmp/osx-elcapitan-red-cursors.tar.gz
 cd /tmp

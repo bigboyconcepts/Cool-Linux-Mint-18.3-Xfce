@@ -124,3 +124,8 @@ alias conkyn='sh -c "~/.conky/Conky-Numix/start-numix.sh Red"'
 
 # For this alias add at the end color theme: blue, Green, grey, orange, purple, red, yellow
 alias conkyf='sh -c "~/.conky/Conky-Futurama/conky/start-futurama.sh green"'
+
+# CLAMAV aliases -----------------------------------------------------------------------
+alias scanvir='sudo clamscan -r /home'
+alias cleanvir='sudo clamscan --infected --remove --recursive /home'
+
