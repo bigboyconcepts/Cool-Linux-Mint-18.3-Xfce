@@ -9,7 +9,7 @@
 # Modified by       : TheGreatYellow67 (TgY67)
 # Version           : v2
 # Start date        : 09/02/2017
-# Last modified date: 05/12/2017
+# Last modified date: 09/12/2017
 #
 # #################################################################
 
@@ -64,10 +64,10 @@ ask() {
 
 # CHANGE THIS!
 #
-VBOX_VER="5.2.2"
-VBOX_FILE="http://download.virtualbox.org/virtualbox/5.2.2/virtualbox-5.2_5.2.2-119230~Ubuntu~xenial_amd64.deb"
-VBOX_EXTPACK="http://download.virtualbox.org/virtualbox/5.2.2/Oracle_VM_VirtualBox_Extension_Pack-5.2.2-119230.vbox-extpack"
-VBOX_EXTPACK_FILENAME="Oracle_VM_VirtualBox_Extension_Pack-5.2.2-119230.vbox-extpack"
+VBOX_VER="5.1.30"
+VBOX_FILE="http://download.virtualbox.org/virtualbox/5.1.30/virtualbox-5.1_5.1.30-118389~Ubuntu~xenial_amd64.deb"
+VBOX_EXTPACK="http://download.virtualbox.org/virtualbox/5.1.30/Oracle_VM_VirtualBox_Extension_Pack-5.1.30-118389.vbox-extpack"
+VBOX_EXTPACK_FILENAME="Oracle_VM_VirtualBox_Extension_Pack-5.1.30-118389.vbox-extpack"
 
 echo "Default Virtualbox version is $VBOX_VER:"
 echo ""

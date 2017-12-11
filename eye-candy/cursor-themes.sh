@@ -9,7 +9,7 @@
 # Modified by       : TheGreatYellow (TgY)
 # Version           : v1
 # Start date        : 09/02/2017
-# Last modified date: 07/12/2017
+# Last modified date: 11/12/2017
 #
 # #################################################################
 
@@ -204,6 +204,27 @@ rm -fr /tmp/openzone-cursors/
 if [ -n "${ROOT_FOLDER}" ]; then
   cd $ROOT_FOLDER
 fi
+
+# #################################################################
+# Obsidian Cursors
+# https://www.gnome-look.org/content/show.php/Obsidian+Cursors?content=73135
+# #################################################################
+#
+echo ""
+echo -e '\033[1;31m => Installing Obsidian cursors...'
+echo -e '\033[0m'
+sleep 2
+
+OBSIDIAN_CURSORS_FILE="https://dl.opendesktop.org/api/files/downloadfile/id/1460735403/s/4941a90abe3f52225c467e3439d16363/t/1512980861/73135-Obsidian.tar.bz2"
+
+wget $OBSIDIAN_CURSORS_FILE -O /tmp/obsidian-cursors.tar.bz2
+cd /tmp
+tar xjf obsidian-cursors.tar.bz2
+
+cp -r /tmp/Obsidian/ $HOME/.icons/Obsidian/
+
+rm /tmp/obsidian-cursors.tar.bz2
+rm -fr /tmp/Obsidian/
 
 ###################################################################
 
